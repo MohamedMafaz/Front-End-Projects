@@ -1,0 +1,243 @@
+ /*Define the Font Awesome font family */
+ @font-face {
+  font-family: 'Font Awesome 5 Free';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'),
+  url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+  
+        /* Use the Font Awesome font family for the icon */
+.icon {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-style: normal;
+  margin-right: 10px;
+  color: #7B7B7B;
+ 
+}
+body{
+  background-color: #F5F4F7;
+}
+/*---------Navbar styling----------------*/
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 223px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 10px 1px rgba(138, 125, 125, 0.25);
+}
+
+    /* Set the style for the links inside the navbar */
+    .navbar a {
+        display: block;
+        color: #7b7b7b;
+        text-decoration: none;
+        padding: 10px;
+        margin-left: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        max-width: 160px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+
+        /* Change the color of the link when it's hovered over */
+        .navbar a:hover, .navbar a:focus, .item-selected {
+            background: #F5F5F5;
+            border-radius: 7px;
+            outline: none;
+        }
+
+.premium_button {
+    width: 167.48px;
+    height: 42px;
+    background: linear-gradient(265.55deg, #3EC1C7 19.07%, #18939C 101.72%);
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+    .premium_button:hover {
+        background: linear-gradient(265.55deg, #18939C 19.07%, #3EC1C7 101.72%);
+    }
+
+.home {
+    margin-top: 20px;
+    border-radius: 7px;
+    max-width: 160px;
+    color: red;
+}
+
+.navbar i {
+    margin-right: 10px;
+}
+
+.plogo {
+    width: 115.17px;
+    height: 69.3px;
+    margin-bottom: 16px;
+}
+/*------Navbar section End*/
+
+
+
+       
+
+
+
+/* Set the style for the content that appears next to the navbar */
+.content {
+    margin-left: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.title {
+    font-family: 'Poppins';
+    font-style: bold;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #16666C;
+    margin-left: 350px; 
+    display: inline-block;
+    
+}
+
+
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+.title {
+    font-family: 'Poppins';
+    font-style: bold;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 33px;
+    /* identical to box height */
+
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #16666C;
+    margin-left: 300px; 
+    display: inline-block;   
+}
+
+.propoplex {
+    color: #18939C; 
+    display: inline-block;
+  }
+
+  .logo {
+    display: block; 
+    margin: auto;
+  }
+
+
+
+  .card {
+    width: 285px;
+    height: 341px;
+    background: #F5F4F7 ;
+    border:2px solid #16666C;
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    margin-left: -20px;
+    transition: all 0.3s ease;
+  }
+  
+  .card-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .card-content {
+    padding: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: -5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 38px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #025C63;
+
+  }
+  
+  .card-description {
+    font-size: 14px;
+  }
+  
+.cardImage {
+  width: 160.73px;
+  height: 160.73px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card1 {
+  width: 285px;
+  height: 341px;
+  background: #F5F4F7 ;
+  border:2px solid #16666C;
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  margin-left: 250px;
+  transition: all 0.3s ease;
+}
+
+.card:hover,.card1:hover{
+  background: #fff;
+  border: none;
+  box-shadow: 4px 4px 31px #CCD3D3;
+  transform: scale(1.05);
+}

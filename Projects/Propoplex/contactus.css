@@ -1,0 +1,429 @@
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'),
+  url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+:root {
+  --primary: #F8F8F8;
+  --primary-alt: #E1EFF0;
+  --on-primary: #7ED0D6;
+  --on-primary-alt: #F8F8F8;
+  --accent: #7ED0D6;
+  --on-accent: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--primary);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin-top: -120px;
+  margin-right: 100px;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 223px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 10px 1px rgba(138, 125, 125, 0.25);
+}
+/*---------Navbar styling----------------*/
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 223px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 10px 1px rgba(138, 125, 125, 0.25);
+}
+
+    /* Set the style for the links inside the navbar */
+    .navbar a {
+        display: block;
+        color: #7b7b7b;
+        text-decoration: none;
+        padding: 10px;
+        margin-left: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        max-width: 160px;
+        /* identical to box height */
+        letter-spacing: 0.04em;
+    }
+
+        /* Change the color of the link when it's hovered over */
+        .navbar a:hover, .navbar a:focus, .item-selected {
+            background: #F5F5F5;
+            border-radius: 7px;
+            outline: none;
+        }
+
+.premium_button {
+    width: 167.48px;
+    height: 42px;
+    background: linear-gradient(265.55deg, #3EC1C7 19.07%, #18939C 101.72%);
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: background-color 0.3s ease;
+}
+
+
+    .premium_button:hover {
+        background: linear-gradient(265.55deg, #18939C 19.07%, #3EC1C7 101.72%);
+    }
+
+.home {
+    margin-top: 20px;
+    border-radius: 7px;
+    max-width: 160px;
+    color: red;
+}
+
+.navbar i {
+    margin-right: 10px;
+}
+
+.plogo {
+    width: 115.17px;
+    height: 69.3px;
+    margin-bottom: 16px;
+}
+/*------Navbar section End*/
+    
+
+       
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+a {
+  color: var(--on-primary);
+  text-decoration: none;
+}
+
+.active {
+  color: var(--accent);
+}
+
+button {
+  background-color: var(--accent);
+  border: none;
+  border-radius: 32px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  color: var(--on-accent);
+  cursor: pointer;
+  font-size: 13px;
+  padding: 10px 32px;
+  white-space: nowrap;
+}
+
+.send-button {
+    background-color: var(--accent);
+    border: none;
+    border-radius: 32px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: var(--on-accent);
+    cursor: pointer;
+    font-size: 15px;
+    padding: 7px 40px;
+    width: 120px;
+    height: 35px;
+    margin: 30px auto;
+}
+
+/* Contact Us Section */
+#contact-container {
+  padding: 160px 40px 80px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* Form Container */
+.form-container {
+  position: relative;
+  width: 60%;
+  max-width: 800px;
+}
+
+form {
+  text-align: center;
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    #7ED0D6,
+    var(--primary-alt)
+  );
+  border: 1px solid #ffffff;
+  border-radius: 25px;
+  margin: 75px;
+  padding: 40px;
+
+  position: relative;
+  z-index: 10;
+}
+
+.form-group {
+  border-bottom: 1px solid var(--on-primary-alt);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+
+  position: relative;
+}
+
+.form-group-prepend {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 12px;
+  padding: 6px;
+}
+
+.form-group-prepend img {
+  filter: invert(28%) sepia(40%) saturate(2991%) hue-rotate(334deg)
+    brightness(125%) contrast(92%);
+  width: 16px;
+}
+
+input,
+textarea {
+  background: none;
+  border: none;
+  color: var(--on-primary-alt);
+  font-family: Poppins, sans-serif;
+  font-size: 15px;
+
+  display: flex;
+  justify-content: stretch;
+  width: 100%;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--on-primary-alt);
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: none;
+}
+
+.form-image {
+  width: 150px;
+  height: auto;
+
+  position: absolute;
+}
+
+.envelope {
+  left: 0;
+  top: 0;
+}
+
+.phonebook {
+  bottom: 0;
+  right: 0;
+}
+
+/* Tablets and Mobile Devices */
+@media screen and (max-width: 768px) {
+  #contact-container {
+    padding: 40px 10px;
+  }
+
+  .image-container {
+    display: none;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+}
+
+  
+.form-icon {
+  fill: #fff;
+}
+
+i {
+  color: #fff;
+}
+
+.navbar i {
+  color: #7b7b7b;
+}
+
+
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff2') format('woff2'),
+  url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/webfonts/fa-solid-900.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 223px;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 10px 1px rgba(138, 125, 125, 0.25);
+}
+
+/* Set the style for the links inside the navbar */
+.navbar a {
+  display: block;
+  color: #7b7b7b;
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+
+/* Change the color of the link when it's hovered over */
+.navbar a:hover {
+  background: #F5F5F5;
+  border-radius: 7px;
+}
+
+/* Set the style for the content that appears next to the navbar */
+.content {
+  margin-left: 150px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.premium_button {
+  width: 167.48px;
+  height: 42px;
+  background: linear-gradient(265.55deg, #3EC1C7 19.07%, #18939C 101.72%);
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  display: block; 
+  margin: auto;
+  margin-top: 20px; 
+  margin-left: 20px;
+}
+
+.premium_button i {
+  color: #fff;
+}
+
+.title {
+  font-family: 'Poppins';
+  font-style: bold;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 33px;
+  /* identical to box height */
+
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #16666C;
+  margin-left: 350px; 
+  display: inline-block;
+  
+}
+
+.nav-link.active {
+  background-color: #7b7b7b;
+  color: #000000;
+}
+
+.icon {
+font-family: 'Font Awesome 5 Free';
+font-weight: 900;
+font-style: normal;
+margin-right: 10px;
+
+}
+
+/* Set the style for the content that appears next to the navbar */
+.content {
+  margin-left: 150px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.premium_button {
+  width: 167.48px;
+  height: 42px;
+  background: linear-gradient(265.55deg, #3EC1C7 19.07%, #18939C 101.72%);
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  display: block; 
+  margin: auto;
+  margin-top: 20px; 
+  margin-left: 20px;
+}
+
+.nav-link.active {
+  background-color: #7b7b7b;
+  color: #000000;
+}
+
+.navbar i {
+  margin-right: 10px;
+}
